@@ -3,17 +3,15 @@
     <head>
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Partiendo la sexta clase</title>
+        <title>DASHBOARD</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous " />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.css" />
         <script src="https://cdnjs.cloudflare.com/ajax/libs/chartist/0.11.4/chartist.min.js"></script>
         <style>
-            .ct-series-a .ct-line,
-            .ct-series-a .ct-point {
-                stroke: #7346BB;
-            }
-            body {
-                color: #7346BB;
+            body{
+                font-family: "Roboto";
+                color: #FFFFFF;
+                background-image: linear-gradient(to bottom , #150D21, #A07CDA);
             }
             em {
                 font-style: normal;
@@ -24,9 +22,14 @@
                 font-weight: bolder;
                 stroke: #7346BB;
             }
+
+            .ct-series-a .ct-line,
+            .ct-series-a .ct-point {
+                stroke: #7346BB;
+            }
+
         </style>
     </head>
-    <body class="bg-light">
         <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-file-earmark-text" viewBox="0 0 16 16" class="d-none">
             <symbol id="pdf" viewBox="0 0 16 16">
                 <path fill-rule="M5.5" 7a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1zM5 9.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5m0 2a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1h-2a.5.5 0 0 1-.5-.5 />
@@ -37,8 +40,8 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-md-12">
-        <h1 class="ms-2"><span>diseño</span>uc</h1>
-                    <h3 class="ms-2 fs-5">
+        <h1 class="ms-2 text-center"><span>Diseño</span>uc</h1>
+                    <h3 class="ms-2 fs-5 text-center">
                         Memorias de Proyecto de Título con PDF disponible y en el ámbito de
                         <select class="ms-1">
                             <option value="Alimentación">Alimentación</option>
@@ -65,9 +68,9 @@
 
                    </div>            
                 <div class="col-md-6">            
-                <div class="card my-4 shadow-sm">
+                <div class="card my-4 shadow-sm text-center">
                     <div class="card-header" style="background-color: rgba(115, 70, 187, 0.2)">
-                        <p><u>Notas Promedio por Profesor Guía</u></p>
+                        <p><strong>Notas Promedio por Profesor Guía</strong></p>
                     </div>
                     <div class="card-body">
                     <p>A continuación sólo se muestran las notas promedio que están en o por sobre el promedio general de <span id="corte"></span></p>
@@ -75,9 +78,9 @@
                     </div>
                 </div>
                     
-                <div class="card my-4 shadow-sm">
+                <div class="card my-4 shadow-sm text-center ">
                     <div class="card-header" style="background-color: rgba(115, 70, 187, 0.2)">
-                       <p><u> Palabras habituales en el Ámbito</u></p>
+                       <p><strong>Palabras habituales en el Ámbito</strong></p>
                     </div>
                     <div class="card-body">
                     <p>Ahora se reúnen todos los "para qué" de los proyectos en la tabla y se buscan en lo reunido las palabras repetidas tres o más veces (descartando artículos, adverbios, preposiciones y conjunciones).</p>
@@ -87,9 +90,9 @@
             </div> 
 
              <div class="col-md-6">        
-                <div class="card my-4 shadow-sm">
+                <div class="card my-4 shadow-sm text-center">
                 <div class="card-header" style="background-color: rgba(115, 70, 187, 0.2)">
-                    <p><u>Memorias del ámbito.</u></p>
+                    <p><strong>Memorias del ámbito.</strong></p>
                 </div>
                 <div class="card-body">
                         <div class="table-responsive">
@@ -112,9 +115,9 @@
                      </div>
                  </div>
             <div class="col-md-12">
-            <div class="card my-2 shadow-sm">    
+            <div class="card my-2 shadow-sm text-center">    
                     <div class="card-header" style="background-color: rgba(115, 70, 187, 0.2)">
-                    <p><u>Progresión de todos los promedios generales de todos los proyectos de título</u></p>
+                    <p><strong>Progresión de todos los promedios generales de todos los proyectos de título</strong></p>
                     </div>
                     <div class="card-body"></div>
                     <div class="ct-chart ct-major-eleventh"></div>
